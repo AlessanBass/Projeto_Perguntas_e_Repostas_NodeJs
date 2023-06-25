@@ -16,7 +16,16 @@ app.get("/", function(req, res){
         Neste caso não precisamos passar o caminho completo,
         pois o "render" olha direto na pasta view
     */
-    res.render("index")
+    var nome = "Alessandro C. Santos"
+    var idade = "24"
+    /* 
+        Agora vamos passar esses valores que quremos usar no HTML
+    */
+    res.render("index",{
+        nome: nome,
+        idade : idade,
+        habilitado: true
+    });
 });
 //Criando o servidor
 app.listen(porta, function(erro){

@@ -7,5 +7,14 @@
 </head>
 <body>
     <h1>Perguntas e respostas</h1>
+    <!-- Exibindo valores de variaveis com EJS -->
+
+    <% if(habilitado){ %> <!-- Utilizado para expressoes -->
+        <h3>Vc está habilitado!</h3>
+        <%= nome %> <!-- Exibe o valor da variavel -->
+        <%= idade %>
+    <% } else{%>
+        <h3>Vc nao está habilitado!</h3>
+    <%  }%>
 </body>
 </html>
