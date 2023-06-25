@@ -1,0 +1,23 @@
+{
+  "name": "4_projeto_perguntas_respostas",
+  "version": "1.0.0",
+  "description": "Plataforma de perguntas e respostas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlessanBass/Projeto_Perguntas_e_Repostas_NodeJs.git"
+  },
+  "author": "Alessandro C. Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlessanBass/Projeto_Perguntas_e_Repostas_NodeJs/issues"
+  },
+  "homepage": "https://github.com/AlessanBass/Projeto_Perguntas_e_Repostas_NodeJs#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
