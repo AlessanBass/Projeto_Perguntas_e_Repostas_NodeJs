@@ -13,7 +13,27 @@ app.use(express.static('public'));
 
 //Rota principal da aplicação
 app.get("/", function(req, res){
-    res.render("index");
+    var produtos =[
+        {nome: "Doritos", preco: 3.14},
+        {nome: "Coca-Cola", preco: 5.14},
+        {nome: "Leite", preco: 10.14}
+    ]
+    //Mostrando o html
+    /* 
+        Neste caso não precisamos passar o caminho completo,
+        pois o "render" olha direto na pasta view
+    */
+    var nome = "Alessandro C. Santos"
+    var idade = "24"
+    /* 
+        Agora vamos passar esses valores que quremos usar no HTML
+    */
+    res.render("index",{
+        nome: nome,
+        idade : idade,
+        habilitado: true,
+        produtos: produtos
+    });
 });
 //Criando o servidor
 app.listen(porta, function(erro){
