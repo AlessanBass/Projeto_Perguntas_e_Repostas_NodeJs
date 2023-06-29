@@ -5,3 +5,8 @@ body{
 #formulario-pergunta{
     margin-top: 5vh; /* Altura da tela, o msm que 5% */
 }
+
+span{
+   font-size: 15px;
+   font-style: italic;
+}
