@@ -15,6 +15,11 @@ app.use(express.static('public'));
 app.get("/", function(req, res){
     res.render("index");
 });
+
+app.get("/perguntar", function(req, res){
+    res.render("perguntar");
+});
+
 //Criando o servidor
 app.listen(porta, function(erro){
     if(erro){
